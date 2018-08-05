@@ -145,15 +145,6 @@ header nav ul li a{
 	display: none;
 }
 
-/*header nav ul{
-	display: flex;
-	justify-content: space-around;
-	margin-right: -15px;
-}
-
-header li{
-	margin: 0 15px;
-}*/
 
 /* NAVIGATION */
 
@@ -161,24 +152,29 @@ header li{
 	.menu-toggle{
 		display: block;
 	}
+	
+	header{
+		padding: 0 25px;
+	}
 
 	header h2{
 		margin-bottom: 15px;
 	}
 
 	header nav{
-		/*display: none;*/
-		position: absolute;
-		width: 100%;
+		position: fixed;
+		width: 0;
 		height: calc(100vh - 50px);
+		z-index: 1;
 		background: #4267b2;
+		left: 0;
 		top: 50px;
-		right: -100%;
+		overflow-x: hidden;
 		transition: 0.5s;
 	}
 
 	header nav.active{
-		right: 0;
+		width: 250px;
 	}
 
 	header nav ul{
