@@ -157,14 +157,14 @@ header nav ul li a{
 		height: calc(100vh - 50px);
 		z-index: 1;
 		background: #4267b2;
-		left: 0;
+		right: 0;
 		top: 50px;
 		overflow-x: hidden;
 		transition: 0.5s;
 	}
 
 	header nav.active{
-		width: 250px;
+		width: 100%;
 	}
 
 	header nav ul{
